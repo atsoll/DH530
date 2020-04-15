@@ -1,0 +1,105 @@
+html,body {
+  font-family: 'Raleway', sans-serif;
+  height: 100%;
+  width: 100%;
+  font-size: 20px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  color:rgb(71, 179, 137);
+}
+
+#prompt {
+  text-align: center;
+  width: 60%;
+  margin:auto;
+  font-size: 35px;
+  margin-top: 20vh;
+  margin-bottom: 50vh;
+  color: #dbdbdb;
+  font-family: 'Merriweather', serif !important;
+}
+
+#content {
+  position: relative;
+  top: 360vh;
+  text-align: center;
+}
+
+.bubble {
+  position: relative;
+  height: 40vh;
+  width: 40vh;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 18px;
+}
+
+.bubble-text {
+  padding-top: 15vh;
+  padding-left: 5%;
+  padding-right: 5%;
+  color: #fff;
+}
+
+#intro-blurb {
+  width: 60%;
+  margin: auto;
+  padding: 5%;
+  background-color: rgba(71, 179, 137, 0.2);
+  border: 3px solid rgb(71, 179, 137);
+  border-radius: 5px;
+}
+
+#problem {
+  font-size: 22px;
+}
+
+.section {
+  margin-bottom: 60vh !important;
+}
+
+.carousel {
+  width: 75%;
+  margin: auto;
+  margin-top: 10vh
+}
+
+.slide > img {
+  height: 50vh;
+  width: auto;
+  margin: auto;
+}
+
+.slick-prev:before, .slick-next:before {
+    color:rgb(71, 179, 137) !important;
+    font-size: 30px !important;
+}
+
+#slide-info {
+  margin-top: 5vh;
+  width: 75%;
+  margin:auto;
+}
+
+
+button {
+  width: 40%;
+  margin:auto;
+  height: 10vh;
+  text-align: center;
+  vertical-align: center;
+  color: #fff;
+  background-color: rgb(71, 179, 137);
+  border: none;
+  border-radius: 5px;
+  font-family: 'Merriweather', serif;
+  font-size: 35px
+}
+
+
+.title {
+  text-align: center;
+  padding: 5vh;
+  font-family: 'Merriweather', serif;
+}

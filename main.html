@@ -1,0 +1,43 @@
+<div id="front-facing">
+  <div id="prompt">
+    <p>something to get people to start scrolling</p>
+    <p>&darr;</p>
+  </div>
+  <div id="bubbles" class="section">
+    <div ng-repeat="phrase in model.scroll_bubbles">
+      <div class="bubble" style="top: {{getOffset($index)}}; background-color: {{getGradient($index)}}; margin-left: {{getHoriz($index)}};" data-aos="{{$index%2==0? 'zoom-in-left' : 'zoom-in-right'}}"  data-aos-duration="900" >
+        <p class="bubble-text">{{phrase}}</p>
+      </div>
+    </div>
+  </div>
+  <div id="content">
+    <div id="problem" class="section" data-aos="fade-up"  data-aos-duration="1200">
+      <b>
+        <p>The Canadian film sector is moving too slowly towards gender equity.</p>
+        <p>Policy implemented to encourage equity in the industry has not accomplished its goals.</p>
+        <p>Bureaucratic options aren't working</p>
+        <h2>It's time for a more creative approach.</h2>
+      </b>
+    </div>
+    <div id="intro-blurb" class="section" data-aos="fade-up"  data-aos-duration="1200">
+      <p>The METAPHOR movement, drawing inspiration from global women's strikes, proposes that women in Canadian film sector withdraw their labour from the industry in its current iteration.<p>
+      <p>Let's abandon the structure that is not working for us and build an alternative sector, bringing along anyone who believes in gender equity in film.</p>
+    </div>
+    <div id="rebellion" data-aos="fade-up"  data-aos-duration="1200" class="section">
+      <div class="carousel">
+         <slick class="slider carous" slides-to-show = 1  settings="slickConfig">
+           <div class="slide" ng-repeat="item in model.carouselData"><img src="{{item.img}}"></div>
+         </slick>
+         <div id="slide-info">
+           <h2>{{model.carouselData[model.carouselIndex].title}}<i>&nbsp({{model.carouselData[model.carouselIndex].timeframe}})</i></h2>
+           <p>{{model.carouselData[model.carouselIndex].action}}</p>
+           <p>{{model.carouselData[model.carouselIndex].result}}</p>
+         </div>
+      </div>
+    </div>
+    <div id="pitch" class="section" data-aos="fade-up"  data-aos-duration="1200">
+      <p>Pithy pitch for the new structure</p>
+      <a href="#!report"><button>Learn More</button></a>
+    </div>
+  </div>
+</div>
