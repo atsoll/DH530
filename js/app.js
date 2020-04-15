@@ -1,5 +1,6 @@
 var app = angular.module('datanerds', ['slickCarousel', 'ngRoute']);
 
+prefix='/DH530/'
 
 var gradient = new Rainbow();
 gradient.setNumberRange(0, 6);
@@ -9,10 +10,10 @@ var vh = window.innerHeight/100
 app.config(function($routeProvider) {
     $routeProvider
     .when("/", {
-        templateUrl : "/main.html"
+        templateUrl : prefix + "views/main.html"
     })
     .when("/report", {
-        templateUrl : "/report.html"
+        templateUrl : prefix + "views/report.html"
     })
 });
 
