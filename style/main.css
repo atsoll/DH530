@@ -7,17 +7,37 @@ html,body {
 
 h1,h2,h3,h4,h5,h6 {
   color:rgb(71, 179, 137);
+  font-family: 'Merriweather', serif;
+  margin-bottom: 2vh;
+  font-weight: bold;
+}
+
+a {
+  color:rgb(71, 179, 137) !important;
+  font-weight: bold;
+}
+
+.keyword {
+  color:rgb(71, 179, 137) !important;
+  font-weight: bold;
 }
 
 #prompt {
   text-align: center;
-  width: 60%;
-  margin:auto;
-  font-size: 35px;
+  width: 100%;
   margin-top: 20vh;
-  margin-bottom: 50vh;
-  color: #dbdbdb;
-  font-family: 'Merriweather', serif !important;
+  margin-bottom: 40vh;
+  background-image: url("./img/aspens.jpg");
+  background-size: cover;
+  background-color: rgba(255,255,255,0.85);
+  background-blend-mode: lighten;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+
+#arrow {
+  font-size: 50px;
+  margin-top: 5vh;
 }
 
 #content {
@@ -97,9 +117,125 @@ button {
   font-size: 35px
 }
 
+#report {
+  margin-top: 5vh;
+  padding-bottom: 20vh;
+}
 
-.title {
+.report-section {
+  margin-top: 7%;
+  margin-bottom: 7%
+}
+
+.main-title {
   text-align: center;
-  padding: 5vh;
+  margin-top: 5vh;
+}
+
+.subtitle {
+  font-weight: normal !important;
+  font-style: italic;
+  margin-top: 3%;
+}
+
+.quotes {
+  width: 75%;
+  margin: auto;
+  font-style: italic;
+  font-size: 14px;
   font-family: 'Merriweather', serif;
+  padding-bottom: 7vh
+}
+.quote-left {
+  position: relative;
+  padding:  60px 25px 25px 40px;
+  text-align: left;
+}
+
+.quote-right {
+  position: relative;
+  padding:  60px 40px 25px 25px;
+  text-align: right;
+}
+
+
+.fa-quote-left{
+  left: 10px;
+  position: absolute;
+  top: 10px;
+  font-size: 100px;
+  opacity: 0.4;
+  color: rgba(71, 179, 137, 0.4);
+}
+
+.fa-quote-right {
+  right: 10px;
+  position: absolute;
+  top: 10px;
+  font-size: 100px;
+  opacity: 0.4;
+  color: rgba(71, 179, 137, 0.4);
+}
+
+.attribution {
+  color: rgba(71, 179, 137);
+  bottom: 10px;
+  right: 5px;
+  font-style: normal;
+  font-weight: bolder;
+  margin-top: 3%;
+}
+
+.para {
+  font-size: 16px;
+  padding-top: .5%;
+  padding-bottom: .5%;
+}
+
+.lesson-list {
+  font-size: 16px;
+}
+
+li {
+  padding-top: 1%;
+}
+
+.access-icon {
+  font-size: 40px;
+  text-align: center;
+  width: 20%;
+  margin: auto;
+  padding-top: 3vh;
+  color: #a4aba6;
+}
+#graphs {
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+
+#graphs img {
+  max-width: 100%;
+}
+
+.m-content {
+  padding: 5%;
+  font-size: 16px;
+}
+
+.fa-times {
+  color: #a4aba6;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  font-size: 25px;
+}
+
+.indent {
+  margin-left: 3%;
+}
+
+.country {
+  text-align: center;
+  padding-top: 4vh;
+  padding-bottom: 4vh;
 }

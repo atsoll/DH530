@@ -1,4 +1,4 @@
-var app = angular.module('datanerds', ['slickCarousel', 'ngRoute']);
+var app = angular.module('datanerds', ['slickCarousel', 'ngRoute', 'ui.bootstrap']);
 
 prefix='/DH530/'
 
@@ -18,7 +18,7 @@ app.config(function($routeProvider) {
 });
 
 
-app.controller('ctrl', function($scope, $window, $document) {
+app.controller('ctrl', function($scope, $window, $document, $uibModal) {
 
   this.$onInit = function () {
     AOS.init();
@@ -71,6 +71,17 @@ app.controller('ctrl', function($scope, $window, $document) {
       return '58%'
     }
     return '18%'
+  }
+
+  $scope.openModal = function(url) {
+    $scope.model.modalInstance = $uibModal.open({
+       templateUrl: prefix + url,
+       scope: $scope
+     });
+  }
+
+  $scope.closeModal = function() {
+    $scope.model.modalInstance.close();
   }
 
 
