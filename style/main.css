@@ -173,7 +173,6 @@ button {
   position: absolute;
   top: 10px;
   font-size: 100px;
-  opacity: 0.4;
   color: rgba(71, 179, 137, 0.4);
 }
 
@@ -208,6 +207,11 @@ li {
   padding-top: 3vh;
   color: #a4aba6;
 }
+
+.access-icon:hover {
+  color:  rgb(71, 179, 137);
+}
+
 #graphs {
   padding-top: 10vh;
   padding-bottom: 10vh;
@@ -225,8 +229,8 @@ li {
 .fa-times {
   color: #a4aba6;
   position: absolute;
-  top: 5px;
-  left: 5px;
+  top: 10px;
+  left: 10px;
   font-size: 25px;
 }
 
